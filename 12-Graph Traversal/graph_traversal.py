@@ -13,7 +13,7 @@ def dfs(s):
 		dfs(u)
 
 
-dfs(1)
+#dfs(1)
 
 
 # ==================
@@ -52,7 +52,7 @@ def shortest():
     for e in e_list:
         a, b, w = e
         distance[b] = min(distance[b], distance[a] + w)
-    print(distance[1:])
+    #print(distance[1:])
 
 
 shortest()
@@ -75,7 +75,7 @@ def dijkstra():
             if distance[n] + e[1] < distance[e[0]]:
                 distance[e[0]] = distance[n] + e[1]
                 heapq.heappush(stack, (e[1], e[0]))
-    print(distance[1:])
+    #print(distance[1:])
 
 
 dijkstra()
